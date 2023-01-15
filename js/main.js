@@ -729,11 +729,11 @@ function getEssenceGain() {
 
 function getDarkMatterGain() {
     const darkRuler = gameData.taskData["Dark Ruler"]
-    const darkMatterHarvester = gameData.requirements["Dark Matter Harvester"].isCompleted() ? 10 : 1
-    const darkMatterMining = gameData.requirements["Dark Matter Mining"].isCompleted() ? 3 : 1
-    const darkMatterMillionaire = gameData.requirements["Dark Matter Millionaire"].isCompleted() ? 5 : 1
+    const darkMatterHarvester = gameData.requirements["Dark Matter Harvester"].isCompleted() ? 100 : 1
+    const darkMatterMining = gameData.requirements["Dark Matter Mining"].isCompleted() ? 300 : 1
+    const darkMatterMillionaire = gameData.requirements["Dark Matter Millionaire"].isCompleted() ? 500 : 1
 
-    return 1 * darkRuler.getEffect() * darkMatterHarvester * darkMatterMining * darkMatterMillionaire
+    return 5 * darkRuler.getEffect() * darkMatterHarvester * darkMatterMining * darkMatterMillionaire
 }
 
 function getDarkMatter() {
